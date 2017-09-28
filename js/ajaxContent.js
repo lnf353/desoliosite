@@ -78,7 +78,7 @@
 			},50);
 		    }
 		};
-		req.open('GET', 'http://localhost/desolio.com/' + href.split('/').pop());
+		req.open('GET', window.location.href + href.split('/').pop());
 		req.send();
 	    }
 
