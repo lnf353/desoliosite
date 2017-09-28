@@ -78,7 +78,7 @@
 			},50);
 		    }
 		};
-		req.open('GET', window.location.href + href.split('/').pop());
+		req.open('GET', "https://lnf353.github.io/desoliosite/" + href.split('/').pop());
 		req.send();
 	    }
 
