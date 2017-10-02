@@ -59,43 +59,42 @@
 	    hrefS.page1 = hrefS.page.split("/");
 	    hrefS.page1.pop();
 	    hrefS.page1 = hrefS.page1.join('') + "/";
-	    	    
-	    history.pushState(hrefS, null, 'http://localhost/desolio.com/' + hrefS.page1 );
-	    console.log(hrefS);
+	    
+	    history.pushState(hrefS, null, 'http://lnf353.github.io/desoliosite/' + hrefS.page1 );
 	    insertContent(hrefS);
 	    e.preventDefault();
 	    
 	};
-	function historyCome(e) {
+	function historyCome() {
 	    if(location.pathname == "/desoliosite/service/"){
 	    	hrefS= {page: 'service/service.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    if(location.pathname == "/desoliosite/home/"){
 	    	hrefS= {page: 'home/home.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    if(location.pathname == "/desoliosite/contacts/"){
 	    	hrefS= {page: 'contacts/contacts.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    if(location.pathname == "/desoliosite/our-team/"){
 	    	hrefS= {page: 'our-team/our-team.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    if(location.pathname == "/desoliosite/service/"){
 	    	hrefS= {page: 'our-blog/our-blog.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    if(location.pathname == "/desoliosite/portfolio/"){
 	    	hrefS= {page: 'portfolio/portfolio.html',
-	    page1: 'service/'};
+			page1: 'service/'};
 	    }
 	    insertContent(hrefS);
-    }
-	 window.addEventListener('popstate', historyCome);
+	}
+	window.addEventListener('popstate', historyCome);
     };
-  
+    
 
     function insertContent(hrefS) {
 	var req = new XMLHttpRequest();
@@ -116,12 +115,12 @@
 		
 	    }
 	};
-	req.open('GET', "http://localhost/desoliosite/" + hrefS.page);
+	req.open('GET', "http://lnf353.github.io/desoliosite/" + hrefS.page);
 	req.send();
     }
     
-   
+    
 
-   
+    
 })();
 
