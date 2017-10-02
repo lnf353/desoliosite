@@ -60,7 +60,7 @@
 	    hrefS.page1.pop();
 	    hrefS.page1 = hrefS.page1.join('') + "/";
 	    
-	    history.pushState(hrefS, null, 'http://lnf353.github.io/desoliosite/' + hrefS.page1 );
+	    history.pushState(hrefS, null, 'https://lnf353.github.io/desoliosite/' + hrefS.page1 );
 	    insertContent(hrefS);
 	    e.preventDefault();
 	    
@@ -115,7 +115,7 @@
 		
 	    }
 	};
-	req.open('GET', "http://lnf353.github.io/desoliosite/" + hrefS.page);
+	req.open('GET', "https://lnf353.github.io/desoliosite/" + hrefS.page);
 	req.send();
     }
     
